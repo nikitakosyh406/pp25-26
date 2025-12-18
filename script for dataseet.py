@@ -5,14 +5,14 @@ from PIL import Image
 from io import BytesIO
 
 # === Настройки ===
-CITY_NAME = "moscow"
+CITY_NAME = "N_Tagil"
 OUTPUT_DIR = f"dataset/{CITY_NAME}"
 ZOOM = 18  # Повысим детализацию: ~0.6 м/пикс → тайл ≈ 150×150 м
-MAX_TILES = 200  # Теперь 200 тайлов
+MAX_TILES = 50  # Кол-во фоток
 
-# Центр Москвы (Красная площадь)
-CENTER_LAT = 55.7558
-CENTER_LON = 37.6176
+# Координаты города
+CENTER_LAT = 57.9133
+CENTER_LON = 59.9933
 
 # Радиус в тайлах (подберём так, чтобы хватило на 200+)
 # Например, 9×9 = 81, 15×15 = 225 → возьмём RADIUS=12 → 25×25=625 (но ограничим 200)
